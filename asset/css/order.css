@@ -198,13 +198,12 @@ header .row-flex {
   margin-bottom: 2px;
   text-align: center;
   line-height: 1em;
-  width: 170px;
+  width: 250px;
   border: 1px solid;
   border-radius: 10vw;
 }
 .cart-section .row-grid {
   max-width: 1250px;
-
   padding-bottom: 5%;
   grid-template-columns: 39% 35%;
 }
@@ -359,6 +358,22 @@ td {
   font-weight: 600;
   line-height: 1.2em;
   transition: var(--main-transition);
+}
+
+/* ----order */
+.cart-mmmccc-box_wrapper {
+  margin-left: 8px;
+}
+.cart-mmmccc-box_content {
+  font-size: 20px;
+  line-height: 1.2em;
+  max-width: 1200px;
+}
+.cart-mmmccc-box_order-content {
+  padding-left: 25px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
 }
 /* ----quantity */
 .product-quantity_input {
