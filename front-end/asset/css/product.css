@@ -453,6 +453,7 @@ main {
 }
 .new-products-items {
   font-size: small;
+  margin-left: 11px;
 }
 .products-grid-title p {
   text-decoration: none;

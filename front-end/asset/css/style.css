@@ -246,9 +246,11 @@ header .row-flex {
 }
 .new-products-items {
   font-size: small;
+  margin-left: 11px;
 }
 .products-grid-title p {
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 .products-grid-price {
   font-weight: var(--main-font-weight);
