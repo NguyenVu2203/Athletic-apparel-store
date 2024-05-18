@@ -8,9 +8,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="asset/css/respons.css" />
-    <link rel="stylesheet" href="asset/css/cart.css" />
+    <link rel="stylesheet" href="asset/css/order.css" />
 
-    <title>cart</title>
+    <title>order_success</title>
   </head>
   <body>
     <div class="site-wrapper">
@@ -22,7 +22,7 @@
               <i class="ri-menu-fill"></i>
             </div>
             <div class="header-logo">
-              <a href="http://127.0.0.1:5500/coolmatefake/index.html"
+              <a href="http://127.0.0.1:5500/coolmatefake/front-end/index.html"
                 ><img src="asset/image/logo.png" alt=""
               /></a>
             </div>
@@ -44,7 +44,7 @@
               <i class="ri-search-line"></i>
             </div>
             <div class="header-actions_button">
-              <a href="http://127.0.0.1:5500/coolmatefake/cart.html">
+              <a href="http://127.0.0.1:5500/coolmatefake/front-end/cart.html">
                 <i class="ri-shopping-cart-fill" alt="Icon mini cart"></i
               ></a>
               <span class="counts site-header__cartcount" number="0">0</span>
@@ -53,26 +53,42 @@
         </div>
       </header>
     </div>
+
+    <!-- order -->
+    <div class="container">
+      <h1 class="cart-title">Đơn xác nhận</h1>
+      <div class="cart-mmmccc-box_wrapper" style="margin: 12px 0">
+        <p class="cart-mmmccc-box_content">
+          Xác nhận đơn hàng của bạn:
+          <span style="font-size: bold"
+            >Nguyễn Long Vũ #1.
+            <span
+              style="font-size: bold; color: rgb(0, 50, 175); font-weight: 800"
+            >
+              (Đã xác nhận thành công ! )</span
+            ></span
+          >
+        </p>
+        <div
+          class="cart-mmmccc-box_order-content"
+          style="font-size: larger; letter-spacing: 0.02em"
+        >
+          <p>
+            Cảm ơn bạn đã tin tưởng và ủng hộ sản phẩm của chúng tôi <3. <br />
+            Đơn hàng của bạn giao trong vòng 7 ngày nếu quá hạn giao hàng bạn
+            hãy
+            <a href="" style="color: blue; text-decoration: underline"
+              >liên hệ</a
+            >
+            với chúng tôi đến.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- cart-->
     <section class="cart-section">
       <div class="container">
-        <h1 class="cart-title">Giỏ hàng</h1>
-        <div class="cart-mmmccc-box">
-          <div class="cart-mmmccc-box_wrapper">
-            <div class="cart-mmmccc-box_inner">
-              <a href="" class="cart-mmmccc-box_btn">Tiềm kiếm Voucher</a>
-              <p class="cart-mmmccc-box_content">
-                Săn <a href="">Voucher (Siêu hot)</a> cùng
-                <a href="">MMMCCC</a> ngay thôi, <b>hàng ngàn voucher</b> đang
-                chờ anh em giật lấy. Nhanh chân kẻo mất (Săn đi chờ chi).
-              </p>
-            </div>
-          </div>
-          <p class="cart-mmmccc-box_text">
-            Bạn có tài khoản chưa đấy? Nếu chưa có thì hãy vào
-            <a href=""> Đăng nhập</a> nhé.
-          </p>
-        </div>
         <div class="container-cart">
           <div class="row-grid">
             <div class="cart-mmmccc-left">
@@ -122,6 +138,11 @@
                         <ins>186,000đ</ins>
                       </td>
                       <td class="cart-detail-table_delete">Xoá</td>
+                    </tr>
+                    <tr class="total-amount">
+                      <td colspan="2">Tổng Tiền:</td>
+                      <td colspan="1">372,000đ</td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>

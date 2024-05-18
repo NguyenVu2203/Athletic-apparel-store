@@ -82,3 +82,17 @@ quantityMinus.addEventListener("click", () => {
     quantityInput.value = qty;
   }
 });
+
+// cart payment
+const payList = document.querySelectorAll(".mgb--20");
+const cartPay = document.querySelectorAll(".payment-method_item");
+for (let index = 0; index < cartPay.length; index++) {
+  cartPay[index].addEventListener("click", () => {
+    cartPay.src = cartPay[index].src;
+
+    for (let a = 0; a < cartPay.length; a++) {
+      cartPay[a].classList.remove("active");
+    }
+    cartPay[index].classList.add("active");
+  });
+}

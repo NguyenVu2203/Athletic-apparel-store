@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/ckeditor5/styles.css" />
+    <title>add-product</title>
+  </head>
+  <body>
+    <section class="admin">
+      <div class="row-grid">
+        <div class="admin-sidebar">
+          <div class="admin-sidebar_top">
+            <img src="asset/images/logo.png" alt="" />
+          </div>
+          <div class="admin-sidebar_content">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="ri-dashboard-fill"></i>Dashboard<i
+                    class="ri-add-circle-line"
+                  ></i
+                ></a>
+                <ul class="sub-menu">
+                  <div class="sub-menu_items">
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Tổng quan</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="ri-shopping-cart-fill"></i>Đơn Hàng<i
+                    class="ri-add-circle-line"
+                  ></i
+                ></a>
+                <ul class="sub-menu">
+                  <div class="sub-menu_items">
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Danh sách</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="ri-archive-fill"></i>Sản Phẩm<i
+                    class="ri-add-circle-line"
+                  ></i
+                ></a>
+                <ul class="sub-menu">
+                  <div class="sub-menu_items">
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Danh sách</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""><i class="ri-arrow-right-s-fill"></i>Thêm</a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+
+              <li>
+                <a href=""
+                  ><i class="ri-article-fill"></i>Báo Cáo<i
+                    class="ri-add-circle-line"
+                  ></i
+                ></a>
+                <ul class="sub-menu">
+                  <div class="sub-menu_items">
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Nhập/ Xuất Kho</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Tồn Kho</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Xuất báo cáo</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </li>
+
+              <li>
+                <a href=""
+                  ><i class="ri-settings-5-line"></i>Quản Lý<i
+                    class="ri-add-circle-line"
+                  ></i
+                ></a>
+                <ul class="sub-menu">
+                  <div class="sub-menu_items">
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Tài Khoản</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Khuyến Mãi</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="ri-arrow-right-s-fill"></i>Thanh Toán</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="admin-content">
+          <div class="admin-content_top">
+            <div class="admin-content-top_left">
+              <ul class="flex-box">
+                <li><i class="ri-search-2-line"></i></li>
+                <li><i class="ri-merge-cells-horizontal"></i></li>
+              </ul>
+            </div>
+            <div class="admin-content-top_right">
+              <ul class="flex-box">
+                <li><i class="ri-notification-2-fill" number="3"></i></li>
+                <li><i class="ri-chat-1-line" number="5"></i></li>
+                <li class="flex-box">
+                  <img
+                    style="width: 40px; border-radius: 10vw"
+                    src="asset/images/logo.png"
+                    alt=""
+                  />
+                  <p style="padding-left: 5px">
+                    MMMCCC<i
+                      class="ri-arrow-down-s-fill"
+                      style="all: initial"
+                    ></i>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="admin-content_main">
+            <div class="admin-content-main_title">
+              <h1>Thêm Sản Phẩm</h1>
+            </div>
+            <div class="admin-content-main_site">
+              <div class="admin-content_main-left">
+                <div class="admin-content-main_input">
+                  <input type="text" name="" id="" placeholder="Tên Sản Phẩm" />
+                  <input type="text" name="" id="" placeholder="Mô tả" />
+                </div>
+                <div class="admin-content-main_input input-price">
+                  <input type="text" name="" id="" placeholder="Giá bán" />
+                  <input type="text" name="" id="" placeholder="Discount" />
+                  <input type="text" name="" id="" placeholder="Giá giảm" />
+                </div>
+                <textarea
+                  class="editor_des"
+                  name=""
+                  id=""
+                  placeholder="Đặc điểm nổi bậc"
+                ></textarea>
+                <textarea
+                  class="editor_site admin-content-main_text"
+                  name=""
+                  id=""
+                  placeholder="Chi tiết sản phẩm"
+                ></textarea>
+                <button class="admin-content-main_btn">Thêm sản phẩm</button>
+              </div>
+              <div class="admin-content_main-right">
+                <div class="admin-content-main_img-product">
+                  <label for="file">Ảnh Sản Phẩm</label>
+                  <input id="file" type="file" />
+                  <div class="contain-img"></div>
+                </div>
+                <div class="admin-content-main_img-site">
+                  <label for="file">Mô Tả Sản Phẩm</label>
+                  <input id="file" type="file" />
+                  <div class="contain-img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="asset/ckeditor5/ckeditor.js"></script>
+    <script src="asset/ckeditor5/script.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>

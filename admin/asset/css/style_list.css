@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --main-bg-color: #414e66;
+  --sub-bg-color: #f2f7fb;
+  --top-height: 70px;
+  --main-transition: all 0.3s ease;
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.row-grid {
+  display: grid;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+button {
+  padding: 6px 12px;
+  background-color: black;
+  color: #f2f7fb;
+  cursor: pointer;
+}
+/* ----admin---- */
+.admin .row-grid {
+  grid-template-columns: 20% 80%;
+}
+/* ----sidebar---- */
+.admin-sidebar {
+  height: 180vh;
+  background-color: var(--main-bg-color);
+  justify-content: space-between;
+}
+.admin-sidebar_top {
+  text-align: center;
+  height: var(--top-height);
+  border-bottom: 1px solid gray;
+  padding-top: 5px;
+}
+.admin-sidebar_top img {
+  width: 60px;
+  border-radius: 1vw;
+  margin-right: 14px;
+}
+.admin-sidebar_content {
+  padding: 30px 0 0 40px;
+  color: whitesmoke;
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+}
+.admin-sidebar_content ul li a i {
+  margin-right: 10px;
+  font-size: larger;
+}
+.admin-sidebar_content > ul > li > a {
+  display: block;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+}
+.admin-sidebar_content > ul > li > a i:last-child {
+  margin-left: auto;
+}
+.admin-sidebar_content ul li {
+  padding: 5px 0;
+  transition: var(--main-transition);
+}
+.admin-sidebar_content ul li:hover {
+  background-color: rgba(0, 0, 0, 0.419);
+}
+.sub-menu {
+  overflow: hidden;
+  height: 0;
+  margin-top: 5px;
+  padding: 0 12px;
+  transition: var(--main-transition);
+}
+
+.sub-menu li:hover a {
+  color: aquamarine;
+}
+/* ----content---- */
+.admin-content {
+  background-color: var(--sub-bd-color);
+}
+.flex-box {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  cursor: pointer;
+}
+.flex-box li i {
+  font-size: x-large;
+  padding: 0 30px;
+}
+.admin-content_top {
+  display: flex;
+  justify-content: space-between;
+  height: var(--top-height);
+  border-bottom: 1px solid gray;
+}
+.admin-content-top_right {
+  margin-right: 40px;
+}
+.admin-content-top_right ul li:first-child i {
+  position: relative;
+  width: 2px;
+  padding: 0 9px;
+}
+.admin-content-top_right ul li:first-child i::after {
+  position: absolute;
+  content: attr(number);
+  height: 18px;
+  width: 18px;
+  display: flex;
+  background-color: #4a87ce;
+  border-radius: 50%;
+  top: -11px;
+  right: 4px;
+  color: whitesmoke;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  animation: notification;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.admin-content-top_right ul li:nth-child(2) i {
+  position: relative;
+}
+.admin-content-top_right ul li:nth-child(2) i::after {
+  position: absolute;
+  content: attr(number);
+  height: 18px;
+  width: 18px;
+  display: flex;
+  background-color: #4a87ce;
+  border-radius: 50%;
+  top: -9px;
+  left: 26px;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  animation: notification;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes notification {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* content main */
+.admin-content-main_title h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+  position: relative;
+  padding: 0.8em 0em 0.1em 0.8em;
+}
+.admin-content-main_title h1::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 80px;
+  background-color: black;
+  bottom: 0;
+  left: 22px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* content-admin-main */
+.admin-content_main {
+  background-color: whitesmoke;
+}
+.admin-content-main_site {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 12px;
+  padding-top: 30px;
+  column-gap: 50px;
+}
+.admin-content-main_list {
+  background-color: rgba(169, 158, 158, 0.477);
+}
+tr:nth-child(even) {
+  background-color: #e8f0f6ad;
+}
+.admin-content-main_list-site table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-content-main_list-site table,
+th,
+td {
+  text-align: center;
+  margin-top: 30px;
+}
+.admin-content-main_list-site table th {
+  background-color: rgba(0, 0, 0, 0.681);
+  color: whitesmoke;
+  padding: 6px 0;
+}
+.admin-content-main_list-site table tbody tr {
+  border-bottom: 2px solid white;
+}
+.edit-product {
+  padding: 8px;
+  background-color: rgb(10, 104, 71);
+  color: #f2f7fb;
+  border-radius: 15px;
+}
+.delete-product {
+  padding: 8px;
+  background-color: red;
+  color: #f2f7fb;
+  border-radius: 15px;
+}
+/* ----order-list---- */
+.admin-content-main_list-order table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-content-main_list-order table,
+th,
+td {
+  text-align: center;
+  margin-top: 30px;
+}
+.admin-content-main_list-order table th {
+  background-color: rgba(0, 0, 0, 0.681);
+  color: whitesmoke;
+  padding: 6px 0;
+}
+.admin-content-main_list-order table tbody tr {
+  border-bottom: 2px solid white;
+  font-size: 0.9em;
+  padding-top: 16px;
+  height: 8vh;
+}
+.delete-order {
+  background-color: red;
+  color: #f2f7fb;
+  border: 0;
+  border-radius: 15px;
+}
+.delete-order:hover {
+  background-color: #4a87ce;
+}
+.site-order {
+  padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: greenyellow;
+  border: 0;
+  border-radius: 15px;
+}
+.site-order:hover {
+  background-color: #4a88cebb;
+}
+.confirm-order {
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border: 0;
+  border-radius: 15px;
+}
+.none-confirm-order {
+  background-color: rgba(255, 0, 0, 0.649);
+  color: white;
+  padding: 8px;
+  border: 0;
+  border-radius: 15px;
+}
+/* detail-order */
+.admin-content_img {
+  width: 70px;
+  padding-top: 8px;
+}
+.font-family_detail {
+  font-family: var(--font-family);
+  font-size: 1.1em;
+}
+.total-amount {
+  background-color: rgba(104, 211, 232, 0.686);
+  font-weight: 600;
+}
